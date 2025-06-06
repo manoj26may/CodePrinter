@@ -1,18 +1,18 @@
-#ifndef CODEPRINTER_H
-#define CODEPRINTER_H
+#ifndef CODE_PRINTER_H
+#define CODE_PRINTER_H
 
 #include <Arduino.h>
 
 class CodePrinter {
   public:
-    static void printBlinkExample();
-    static void printDHTExample();
-    static void printOLEDExample();
-    static void printButtonLEDExample();
-    static void printSoilMoistureExample();
-    static void printUltrasonicExample();
-    static void printDHTThingSpeakUpload();
-    static void printThingSpeakReader();
+    static void Blink();
+    static void DHT();
+    static void OLED();
+    static void PushButton();
+    static void SoilMoisture();
+    static void Ultrasonic();
+    static void ThingSpeakUpload();
+    static void ThingSpeakReader();
 };
 
 #endif
