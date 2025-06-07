@@ -130,12 +130,9 @@ void CodePrinter::ThingSpeakReader() {
   Serial.println(F("#include <ThingSpeak.h>"));
   Serial.println(F("const char* ssid = \"your_SSID\";"));
   Serial.println(F("const char* password = \"your_PASSWORD\";"));
-  Serial.println(F("#define DHTPIN D3"));
-  Serial.println(F("#define DHTTYPE DHT11"));
-  Serial.println(F("DHT dht(DHTPIN, DHTTYPE);"));
   Serial.println(F("WiFiClient client;"));
-  Serial.println(F("unsigned long myChannelNumber = 2915464;"));
-  Serial.println(F("const char* myReadAPIKey = \"Your_Read_API_Key\";"));
+  Serial.println(F("unsigned long myChannelNumber = xxxxxxxxx;"));
+  Serial.println(F("const char* myWriteAPIKey = \"Your_Write_API_Key\";"));
   Serial.println(F("void setup() {"));
   Serial.println(F("  Serial.begin(115200);"));
   Serial.println(F("  WiFi.begin(ssid, password);"));
@@ -151,7 +148,7 @@ void CodePrinter::ThingSpeakReader() {
   Serial.println(F("  Serial.print(\"Temp: \" ); Serial.print(t); Serial.print(\" \xC2\xB0C, Humidity: \" ); Serial.print(h); Serial.println(\" %\");"));
   Serial.println(F("  ThingSpeak.setField(1, t);"));
   Serial.println(F("  ThingSpeak.setField(2, h);"));
-  Serial.println(F("  int x = ThingSpeak.writeFields(myChannelNumber, myReadAPIKey);"));
+  Serial.println(F("  int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);"));
   Serial.println(F("  if (x == 200) Serial.println(\"Data sent to ThingSpeak successfully\");"));
   Serial.println(F("  else { Serial.print(\"Problem sending data. HTTP error code: \" ); Serial.println(x); }"));
   Serial.println(F("  delay(20000);"));
