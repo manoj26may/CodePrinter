@@ -124,7 +124,7 @@ void CodePrinter::ThingSpeakUpload() {
   Serial.println(F("}"));
 }
 
-void CodePrinter::ThingSpeakReader() {
+void CodePrinter::ThingSpeakRead() {
   Serial.println(F("#include <ESP8266WiFi.h>"));
   Serial.println(F("#include <DHT.h>"));
   Serial.println(F("#include <ThingSpeak.h>"));
