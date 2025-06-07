@@ -11,7 +11,7 @@ void setup() {
   CodePrinter::SoilMoisture();
   CodePrinter::Ultrasonic();
   CodePrinter::ThingSpeakUpload();
-  CodePrinter::ThingSpeakReader();
+  CodePrinter::ThingSpeakRead();
 }
 
 void loop() {}
