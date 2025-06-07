@@ -12,7 +12,7 @@ class CodePrinter {
     static void SoilMoisture();
     static void Ultrasonic();
     static void ThingSpeakUpload();
-    static void ThingSpeakReader();
+    static void ThingSpeakRead();
 };
 
 #endif
